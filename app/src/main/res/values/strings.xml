@@ -7,4 +7,13 @@
     <string name="bateria">Bateria</string>
     <string name="potencia">Potência</string>
     <string name="recarga">Recarga</string>
+    <string name="preco_kwh">Preço Kwh</string>
+    <string name="km_percorrido">Km Percorrido</string>
+    <string name="calcular">Calcular</string>
+    <string-array name="array_cidades">
+        <item>Araraquara</item>
+        <item>Taquaringa</item>
+        <item>São Paulo</item>
+        <item>Salvador</item>
+    </string-array>
 </resources>
