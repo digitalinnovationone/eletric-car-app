@@ -22,4 +22,11 @@ object CarFactory {
             urlPhoto = "www.google.com.br"
         )
     )
+
+    // VERBOS HTTP
+     // - GET -> Pare recuperar informaçoes
+     // - POST -> Para enviar infomacoes para um servidor
+     // - DELETE -> Que pra deletar algum recurso
+     // - PUT -> Alterar uma entidade como um todo
+     // - PATCH -> Alterar um atributo da entidade
 }
