@@ -20,6 +20,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.eletriccarapp.R
 import com.example.eletriccarapp.data.CarsApi
+import com.example.eletriccarapp.data.local.CarRepository
 import com.example.eletriccarapp.domain.Carro
 import com.example.eletriccarapp.ui.adapter.CarAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -123,7 +124,7 @@ class CarFragment : Fragment() {
             adapter = carroAdapter
         }
         carroAdapter.carItemLister = { carro ->
-            val bateria = carro.bateria
+            val isSaved = CarRepository(requireContext()).saveIfNotExist(carro)
         }
     }
 
@@ -242,4 +243,5 @@ class CarFragment : Fragment() {
             }
         }
     }
+
 }

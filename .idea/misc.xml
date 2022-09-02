@@ -15,8 +15,8 @@
         <entry key="app/src/main/res/drawable/ic_star_selected.xml" value="0.2875" />
         <entry key="app/src/main/res/layout/activity_calcular_autonomia.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/car_fragment.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/carro_item.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/car_fragment.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/carro_item.xml" value="0.33" />
         <entry key="app/src/main/res/layout/favorite_fragment.xml" value="0.3640625" />
       </map>
     </option>
