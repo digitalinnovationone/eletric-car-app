@@ -41,7 +41,7 @@ class CarFragment : Fragment() {
     lateinit var progress: ProgressBar
     lateinit var noInternetImage: ImageView
     lateinit var noInternetText: TextView
-    lateinit var carsApi : CarsApi
+    lateinit var carsApi: CarsApi
 
     var carrosArray: ArrayList<Carro> = ArrayList()
 
@@ -81,14 +81,14 @@ class CarFragment : Fragment() {
     fun getAllCars() {
         carsApi.getAllCars().enqueue(object : Callback<List<Carro>> {
             override fun onResponse(call: Call<List<Carro>>, response: Response<List<Carro>>) {
-                if(response.isSuccessful) {
+                if (response.isSuccessful) {
                     progress.isVisible = false
                     noInternetImage.isVisible = false
                     noInternetText.isVisible = false
                     response.body()?.let {
                         setupList(it)
                     }
-                } else{
+                } else {
                     Toast.makeText(context, R.string.response_error, Toast.LENGTH_LONG).show()
                 }
             }
@@ -121,6 +121,9 @@ class CarFragment : Fragment() {
         listaCarros.apply {
             isVisible = true
             adapter = carroAdapter
+        }
+        carroAdapter.carItemLister = { carro ->
+            val bateria = carro.bateria
         }
     }
 
@@ -225,7 +228,8 @@ class CarFragment : Fragment() {
                         bateria = bateria,
                         potencia = potencia,
                         recarga = recarga,
-                        urlPhoto = urlPhoto
+                        urlPhoto = urlPhoto,
+                        isFavorite = false
                     )
                     carrosArray.add(model)
                 }
