@@ -11,7 +11,7 @@ Oi, sou o Igor! Estou aqui para contribuir com meu conhecimento nesse aplicativo
 
 ## <br />Descrição
 Módulo - Noções Básicas do Android com Kotlin 
-1. Curso - Princípios de Interface de Usuário e Layouts Android
+1. Princípios de Interface de Usuário e Layouts Android
 2. Manipulando Entradas do Usuário em Apps Android
 3. Fundamentos de Multiscreen em Apps Android
 4. Noções Básicas de Rede em Apps Android com Kotlin
